@@ -6,7 +6,7 @@ public class Teleport : MonoBehaviour
     public Transform roomLocation;
     public Transform externalLocation;
     
-    private bool isExternal = false;
+    private bool hasTeleported = false;
 
     public InputActionReference action;
 
@@ -26,17 +26,11 @@ public class Teleport : MonoBehaviour
 
     public void ChangeLocation()
     {
-        if (isExternal)
-        {
-            transform.position = roomLocation.position;
-            transform.rotation = roomLocation.rotation;
-            isExternal = false;
-        }
-        else
+        if (!hasTeleported)
         {
             transform.position = externalLocation.position;
             transform.rotation = externalLocation.rotation;
-            isExternal = true;
+            hasTeleported = true;
         }
     }
 }
