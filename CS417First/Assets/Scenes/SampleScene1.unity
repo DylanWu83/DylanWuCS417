@@ -23698,6 +23698,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -617870294556550382, guid: 645e622dca3c20c4c8e0fb6537f1bf9c, type: 3}
+      propertyPath: hided
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3616992168232947231, guid: 645e622dca3c20c4c8e0fb6537f1bf9c, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -24026,7 +24030,7 @@ Animator:
   m_GameObject: {fileID: 1937069823}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd4e3d19211514213bb5fea90ff177c8, type: 2}
+  m_Controller: {fileID: 9100000, guid: a9394e53697beae4386e6ea4edb79631, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
